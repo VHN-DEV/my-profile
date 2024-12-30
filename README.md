@@ -64,5 +64,3 @@ Xin chào! Tôi là Vũ Hoài Nam, sinh ngày 18/03/2002. Là một Fullstack De
 - AWS Cloud Services
 - Testing và CI/CD
 - Design Patterns trong PHP
-
-</div>
