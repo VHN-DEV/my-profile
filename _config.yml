@@ -1,8 +1,8 @@
 title: Vũ Hoài Nam - Backend Developer
 description: Portfolio và thông tin cá nhân của Vũ Hoài Nam
 author: Vũ Hoài Nam
-url: https://VHN-DEV.github.io
-baseurl: "/VHN"
+url: https://vhn-dev.github.io/VHN-PROFILE/
+baseurl: "/VHN-DEV"
 
 # Build settings
 markdown: kramdown
