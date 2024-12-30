@@ -1,0 +1,22 @@
+title: Vũ Hoài Nam - Backend Developer
+description: Portfolio và thông tin cá nhân của Vũ Hoài Nam
+author: Vũ Hoài Nam
+url: https://hoanghuong29022004.github.io
+baseurl: "/VHN"
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-primer
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude files from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
