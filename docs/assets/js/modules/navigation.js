@@ -70,7 +70,7 @@ export const initNavigation = () => {
 // Handle active navigation links
 export const handleActiveLinks = () => {
     const navLinks = document.querySelectorAll('.nav-link');
-    const sections = document.querySelectorAll('section');
+    const sections = document.querySelectorAll('section[id], footer[id]');
 
     window.addEventListener('scroll', () => {
         let current = '';
