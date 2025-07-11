@@ -1143,20 +1143,20 @@ body.dark-mode .skills .skill-item:hover {
   background: rgba(44, 62, 80, 0.9);
 }
 
-.footer {
-  padding: 4rem 0 2rem;
+.contact {
+  padding: 15rem 0;
   background: linear-gradient(135deg, rgba(108, 99, 255, 0.1) 0%, rgba(74, 69, 177, 0.1) 100%);
   position: relative;
   overflow: hidden;
 }
-.footer .footer-content {
+.contact .contact-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   gap: 2rem;
 }
-.footer .footer-content .footer-title {
+.contact .contact-content .contact-title {
   font-size: 2rem;
   font-weight: 700;
   background: linear-gradient(45deg, #6c63ff, #4a45b1);
@@ -1164,12 +1164,12 @@ body.dark-mode .skills .skill-item:hover {
   -webkit-text-fill-color: transparent;
   margin-bottom: 1rem;
 }
-.footer .footer-content .social-links {
+.contact .contact-content .social-links {
   display: flex;
   gap: 1.5rem;
   margin-bottom: 2rem;
 }
-.footer .footer-content .social-links .social-item {
+.contact .contact-content .social-links .social-item {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -1181,8 +1181,9 @@ body.dark-mode .skills .skill-item:hover {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  text-decoration: none;
 }
-.footer .footer-content .social-links .social-item::before {
+.contact .contact-content .social-links .social-item::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1193,30 +1194,30 @@ body.dark-mode .skills .skill-item:hover {
   opacity: 0;
   transition: all 0.3s ease;
 }
-.footer .footer-content .social-links .social-item i {
+.contact .contact-content .social-links .social-item i {
   font-size: 1.5rem;
   color: #6c63ff;
   position: relative;
   z-index: 1;
   transition: all 0.3s ease;
 }
-.footer .footer-content .social-links .social-item:hover {
+.contact .contact-content .social-links .social-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(44, 62, 80, 0.15);
 }
-.footer .footer-content .social-links .social-item:hover::before {
+.contact .contact-content .social-links .social-item:hover::before {
   opacity: 1;
 }
-.footer .footer-content .social-links .social-item:hover i {
+.contact .contact-content .social-links .social-item:hover i {
   color: white;
 }
-.footer .footer-content .contact-info {
+.contact .contact-content .contact-info {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
 }
-.footer .footer-content .contact-info .contact-item {
+.contact .contact-content .contact-info .contact-item {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -1226,21 +1227,35 @@ body.dark-mode .skills .skill-item:hover {
   box-shadow: 0 5px 15px rgba(44, 62, 80, 0.1);
   transition: all 0.3s ease;
 }
-.footer .footer-content .contact-info .contact-item i {
+.contact .contact-content .contact-info .contact-item i {
   font-size: 1.2rem;
   color: #6c63ff;
 }
-.footer .footer-content .contact-info .contact-item span {
+.contact .contact-content .contact-info .contact-item span {
   color: #2c3e50;
   font-size: 1rem;
 }
-.footer .footer-content .contact-info .contact-item:hover {
+.contact .contact-content .contact-info .contact-item:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(44, 62, 80, 0.15);
   background: linear-gradient(45deg, #6c63ff, #4a45b1);
 }
-.footer .footer-content .contact-info .contact-item:hover i, .footer .footer-content .contact-info .contact-item:hover span {
+.contact .contact-content .contact-info .contact-item:hover i, .contact .contact-content .contact-info .contact-item:hover span {
   color: white;
+}
+
+.footer {
+  padding: 8rem 0;
+  background: linear-gradient(135deg, rgba(108, 99, 255, 0.1) 0%, rgba(74, 69, 177, 0.1) 100%);
+  position: relative;
+  overflow: hidden;
+}
+.footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
 }
 .footer .footer-content .copyright {
   margin-top: 2rem;
@@ -1369,6 +1384,7 @@ body.dark-mode .footer .copyright {
   display: flex;
   align-items: center;
   gap: 0.3rem;
+  text-decoration: none;
 }
 .projects .projects-grid .project-item .project-content .project-links a i {
   font-size: 0.9rem;
@@ -1409,7 +1425,7 @@ body.dark-mode .footer .copyright {
 }
 
 .contact {
-  padding: 4rem 0;
+  padding: 15rem 0;
   background: #f9f9f9;
   text-align: center;
 }
