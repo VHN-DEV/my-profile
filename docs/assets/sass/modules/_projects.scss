@@ -169,9 +169,18 @@
 }
 
 .contact {
-    padding: 15rem 0;
+    padding: 7rem 0;
     background: #f9f9f9;
     text-align: center;
+
+    .contact-title {
+        font-size: 2rem;
+        font-weight: 700;
+        background: linear-gradient(45deg, $primary-color, $secondary-color);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 1rem;
+    }
 
     .contact-info {
         h3 {
