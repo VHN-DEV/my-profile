@@ -206,38 +206,15 @@ body.dark-mode {
         background: rgba($dark-color, 0.95);
 
         .navbar {
-            // Brand/Logo in dark mode
-            .navbar-brand {
-                .logo-text {
-                    background: map-get($gradients, primary);
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    
-                    &::after {
-                        background: map-get($gradients, accent);
-                        background-clip: text;
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                    }
+            .nav-link {
+                color: $light-color;
+
+                &:hover {
+                    background: rgba($light-color, 0.1);
                 }
-            }
 
-            .navbar-nav {
-                .nav-item {
-                    .nav-link {
-                        color: $light-color;
-
-                        &:hover {
-                            color: $primary-color;
-                            background: rgba($light-color, 0.1);
-                        }
-
-                        &.active {
-                            color: $primary-color;
-                            background: rgba($light-color, 0.15);
-                        }
-                    }
+                &.active {
+                    background: rgba($light-color, 0.15);
                 }
             }
 
