@@ -58,7 +58,7 @@
                 .nav-link {
                     @include flex-center;
                     gap: 0.5rem;
-                    // color: $dark-color;
+                    color: $dark-color;
                     font-weight: 500;
                     padding: 0.5rem 1rem;
                     border-radius: 8px;
@@ -206,15 +206,38 @@ body.dark-mode {
         background: rgba($dark-color, 0.95);
 
         .navbar {
-            .nav-link {
-                color: $light-color;
-
-                &:hover {
-                    background: rgba($light-color, 0.1);
+            // Brand/Logo in dark mode
+            .navbar-brand {
+                .logo-text {
+                    background: map-get($gradients, primary);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    
+                    &::after {
+                        background: map-get($gradients, accent);
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
                 }
+            }
 
-                &.active {
-                    background: rgba($light-color, 0.15);
+            .navbar-nav {
+                .nav-item {
+                    .nav-link {
+                        color: $light-color;
+
+                        &:hover {
+                            color: $primary-color;
+                            background: rgba($light-color, 0.1);
+                        }
+
+                        &.active {
+                            color: $primary-color;
+                            background: rgba($light-color, 0.15);
+                        }
+                    }
                 }
             }
 
