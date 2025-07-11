@@ -81,9 +81,9 @@
                     &.active {
                         color: $primary-color;
                         background: rgba($primary-color, 0.15);
-                        
+
                         &::after {
-                            content: '';
+                            content: "";
                             position: absolute;
                             left: 0;
                             bottom: 0;
@@ -103,7 +103,7 @@
             padding: 0.5rem;
             background: transparent;
             z-index: 1000;
-            
+
             &:focus {
                 box-shadow: none;
                 outline: none;
@@ -119,7 +119,7 @@
 
                 &::before,
                 &::after {
-                    content: '';
+                    content: "";
                     position: absolute;
                     width: 24px;
                     height: 2px;
@@ -207,7 +207,7 @@ body.dark-mode {
 
         .navbar {
             .nav-link {
-                color: $light-color;
+                color: $light-color !important;
 
                 &:hover {
                     background: rgba($light-color, 0.1);
@@ -215,6 +215,16 @@ body.dark-mode {
 
                 &.active {
                     background: rgba($light-color, 0.15);
+                }
+            }
+
+            .theme-toggle {
+                .theme-toggle-inner {
+                    color: $light-color;
+
+                    &:hover {
+                        color: rgba($light-color, 0.95);
+                    }
                 }
             }
 

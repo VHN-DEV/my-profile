@@ -151,6 +151,7 @@
   .header .navbar .navbar-collapse .navbar-nav .nav-item {
     margin: 0.5rem 0;
     width: 100%;
+    cursor: pointer;
   }
   .header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
     padding: 0.8rem 1.5rem;
@@ -171,13 +172,19 @@ body.dark-mode .header {
   background: rgba(44, 62, 80, 0.95);
 }
 body.dark-mode .header .navbar .nav-link {
-  color: #f8f9fa;
+  color: #f8f9fa !important;
 }
 body.dark-mode .header .navbar .nav-link:hover {
   background: rgba(248, 249, 250, 0.1);
 }
 body.dark-mode .header .navbar .nav-link.active {
   background: rgba(248, 249, 250, 0.15);
+}
+body.dark-mode .header .navbar .theme-toggle .theme-toggle-inner {
+  color: #f8f9fa;
+}
+body.dark-mode .header .navbar .theme-toggle .theme-toggle-inner:hover {
+  color: rgba(248, 249, 250, 0.95);
 }
 body.dark-mode .header .navbar .navbar-toggler-icon,
 body.dark-mode .header .navbar .navbar-toggler-icon::before,
